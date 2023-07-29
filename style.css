@@ -943,7 +943,7 @@ body {
   }
 
   .banner-container {
-    display: none;
+    display: block;
   }
 
   .banner-img img {
