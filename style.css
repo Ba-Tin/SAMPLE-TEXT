@@ -943,6 +943,7 @@ body {
 
   .banner-container {
     flex-direction: column;
+    align-items: flex-start !important;
   }
 
   .banner-img img {
@@ -959,7 +960,7 @@ body {
 
   .banner-text,
   .slider-text {
-    padding: 0rem 2rem 3rem 2rem !important;
+    padding: 2rem 2rem 3rem 2rem !important;
   }
 
   .square {
@@ -975,6 +976,7 @@ body {
 
   .slider-container {
     flex-direction: column-reverse;
+    align-items: flex-start !important;
   }
   .tanner-second-container {
     padding: 0 4rem;
