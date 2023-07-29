@@ -219,7 +219,6 @@ body {
 
 .header .img-right img {
   max-width: 63.3%;
-  /* height: 100%; */
   float: right;
   /* object-fit: contain; */
 }
@@ -943,7 +942,7 @@ body {
   }
 
   .banner-container {
-    display: block;
+    flex-direction: column;
   }
 
   .banner-img img {
