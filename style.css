@@ -65,8 +65,6 @@ body {
 
 /* mobile  */
 .header .img-right .nav-bars-btn {
-  width: 42px;
-  /* height: 31px; */
   color: var(--light);
   float: right;
   position: absolute;
@@ -74,7 +72,43 @@ body {
   top: 0rem;
   font-size: 3rem;
   display: none;
+  cursor: pointer;
 }
+.menu-mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  max-width: 100%;
+  background: var(--gray);
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  transform: translateX(100%);
+}
+.menu-moblie-close {
+  font-size: 3rem;
+  position: absolute;
+  right: 0;
+  color: var(--light);
+  cursor: pointer;
+}
+.menu-mobile a {
+  font-size: 2rem;
+  margin-top: 3rem;
+  text-decoration: none;
+  color: var(--light);
+  text-transform: uppercase;
+  text-align: center;
+}
+.menu-mobile a:hover {
+  color: var(--earth--brown);
+}
+.nav-input:checked ~ .menu-mobile {
+  transform: translateX(0);
+}
+/* end mobile */
 
 .header .header-top .menu a {
   text-transform: uppercase;
@@ -240,7 +274,7 @@ body {
   z-index: 3;
   color: var(--light);
   right: 0;
-  top: 11rem;
+  top: 43%;
 }
 
 .banner-title h1 {
@@ -314,7 +348,7 @@ body {
   position: absolute;
   z-index: 3;
   color: var(--light);
-  top: 11rem;
+  top: 29%;
 }
 
 .slider-title h1 {
@@ -562,6 +596,7 @@ body {
 }
 
 .tanner-third {
+  margin-top: 3rem;
   padding: 0px 9rem;
   position: absolute;
   top: 70%;
@@ -766,10 +801,20 @@ body {
 }
 
 /* end footer */
-@media screen and (max-width: 469px) {
-  .background-title h1 {
+
+/* reponsive */
+@media screen and (max-width: 470px) {
+  html {
+    font-size: 13px;
+  }
+  p {
     font-size: 1rem !important;
-    position: static;
+  }
+  .banner-title {
+    top: 16%;
+  }
+  .slider-title {
+    top: 0;
   }
 }
 @media screen and (max-width: 765px) {
@@ -781,6 +826,9 @@ body {
   .list-item {
     display: block;
     padding: 0;
+  }
+  .tanner-title span {
+    float: none;
   }
   .footer-center li {
     margin-right: 2rem;
@@ -799,7 +847,6 @@ body {
   }
   .header .img-right .nav-bars-btn {
     display: block;
-    padding-right: 4rem;
   }
   .header .side-navigation .navigation {
     margin-top: 6rem;
@@ -827,12 +874,20 @@ body {
   .tanner-third .tanner-third-img img {
     width: 100%;
   }
+  .tanner-third .tanner-third-title {
+    position: static;
+    text-align: center;
+    padding: 0;
+  }
   .tanner .tanner-footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding-left: 2rem;
     padding-right: 0;
+  }
+  .background-title h1 {
+    position: static;
   }
   .tanner-second-container,
   .tanner-third {
