@@ -863,6 +863,9 @@ html {
   .side-navigation .title .title-bottom {
     padding: 0px 0rem;
   }
+  .line-tanner-top {
+    display: none;
+  }
   .tanner-inner-top,
   .tanner-inner-bottom,
   .tanner-second-container {
