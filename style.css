@@ -150,7 +150,7 @@ html {
 }
 
 .header .side-navigation .navigation .num-title {
-  font-size: 2rem;
+  font-size: 2rem !important;
   margin: 2rem 0;
 }
 
