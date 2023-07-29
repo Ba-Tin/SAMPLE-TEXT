@@ -221,7 +221,7 @@ body {
   max-width: 63.3%;
   height: 100%;
   float: right;
-  object-fit: contain;
+  /* object-fit: contain; */
 }
 
 /* end header */
