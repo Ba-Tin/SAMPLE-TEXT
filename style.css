@@ -890,7 +890,9 @@ html {
     position: static;
     text-align: center;
     padding: 0;
+    color: var(--dark) !important;
   }
+
   .tanner .tanner-footer {
     flex-wrap: wrap;
     align-items: center;
@@ -947,7 +949,7 @@ html {
   }
 
   .banner-img img {
-    max-width: 100%;
+    width: 97%;
     height: 100%;
   }
 
@@ -1004,7 +1006,7 @@ html {
   }
 
   .slider-img img {
-    max-width: 97%;
+    width: 97%;
     height: 100% !important;
   }
 
